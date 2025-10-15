@@ -17,7 +17,6 @@ def post_create(request):
         form = PostForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success("Post created successfully")
             return redirect('post_list')
     else:
         form = PostForm()

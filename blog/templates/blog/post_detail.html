@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post Detail</title>
-</head>
-<body>
-    <!-- Your content goes here -->
-     <h1>this is post detail</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}Post Detail{% endblock %}
+
+{% block content %}
+<h1>{{post.title}}</h1>
+{{post.content}}
+{% endblock %}
